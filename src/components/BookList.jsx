@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"; // Import PropTypes
-import Book from "./Book";
-import "./style.css"
+import Book from "./Book"; // Assuming you have a Book component
+import "./style.css";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function BookList(props) {
   console.log("props", props);
@@ -8,7 +9,10 @@ function BookList(props) {
   return (
     <div className="book-list">
       {props.booksData.map((data) => (
-        <Book key={data.id} bookDetails={data} />
+        // Use Link to navigate to each book page
+        <Link key={data.id} to={`/book/${data.id}`} className="book-link">
+          <Book bookDetails={data} />
+        </Link>
       ))}
     </div>
   );

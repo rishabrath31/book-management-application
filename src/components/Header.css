@@ -1,0 +1,37 @@
+/* Header.css */
+
+/* General styling for the header container */
+.header {
+  background-color: #2b8bb1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the menu list */
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling each menu item */
+.header-item {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Styling the Link elements */
+.header-item a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.header-item a:hover {
+  color: #012d34;
+}
